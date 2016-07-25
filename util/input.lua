@@ -1,7 +1,8 @@
-local input = {}
+local Input = {}
 
-local bridge = require "util.bridge"
-local memory = require "util.memory"
+local Bridge = require "util.bridge"
+local Memory = require "util.memory"
+local Utils = require "util.utils"
 
 local lastSend
 local currentButton, remainingFrames, setForFrame
@@ -9,35 +10,35 @@ local debug
 local bCancel = true
 
 local function bridgeButton(btn)
-	if (btn ~= lastSend) then
+	if btn ~= lastSend then
 		lastSend = btn
-		bridge.input(btn)
+		Bridge.input(btn)
 	end
 end
 
 local function sendButton(button, ab)
 	local inputTable = {[button] = true}
 	joypad.set(inputTable)
-	if (debug) then
-		gui.text(0, 7, button.." "..remainingFrames)
+	if debug then
+		Utils.drawText(0, 14, button.." "..remainingFrames)
 	end
-	if (ab) then
-		button = "AB"
+	if ab then
+		button = "A,B"
 	end
 	bridgeButton(button)
 	setForFrame = button
 end
 
-function input.press(button, frames)
-	if (setForFrame) then
+function Input.press(button, frames, walk)
+	if setForFrame then
 		print("ERR: Reassigning "..setForFrame.." to "..button)
 		return
 	end
-	if (frames == nil or frames > 0) then
-		if (button == currentButton) then
+	if frames == nil or frames > 0 then
+		if button == currentButton then
 			return
 		end
-		if (not frames) then
+		if not frames then
 			frames = 1
 		end
 		currentButton = button
@@ -47,40 +48,52 @@ function input.press(button, frames)
 	end
 	bCancel = button ~= "B"
 	sendButton(button)
-end
 
-function input.cancel(accept)
-	if (accept and memory.value("menu", "shop_current") == 20) then
-		input.press(accept)
-	else
-		local button
-		if (bCancel) then
-			button = "B"
+	if walk then
+		local cancel
+		if bCancel then
+			cancel = "B"
 		else
-			button = "A"
+			cancel = "A"
 		end
-		remainingFrames = 0
-		sendButton(button, true)
-		bCancel = not bCancel
+		local inputTable = {[button]=true, [cancel]=true}
+		joypad.set(inputTable)
 	end
 end
 
-function input.escape()
-	local inputTable = {Right=true, Down=true}
-	joypad.set(inputTable)
-	bridgeButton("Escape")
+function Input.cancel(accept)
+	if accept and Memory.value("menu", "option_dialogue") == 20 then
+		Input.press(accept)
+		return true
+	end
+
+	local button
+	if bCancel then
+		button = "B"
+	else
+		button = "A"
+	end
+	remainingFrames = 0
+	sendButton(button, true)
+	bCancel = not bCancel
 end
 
-function input.clear()
+function Input.escape()
+	local inputTable = {Right=true, Down=true}
+	joypad.set(inputTable)
+	bridgeButton("D,R")
+end
+
+function Input.clear()
 	currentButton = nil
 	remainingFrames = -1
 end
 
-function input.update()
-	if (currentButton) then
+function Input.update()
+	if currentButton then
 		remainingFrames = remainingFrames - 1
-		if (remainingFrames >= 0) then
-			if (remainingFrames > 0) then
+		if remainingFrames >= 0 then
+			if remainingFrames > 0 then
 				sendButton(currentButton)
 				return true
 			end
@@ -91,29 +104,28 @@ function input.update()
 	setForFrame = nil
 end
 
-function input.advance()
-	if (not setForFrame) then
+function Input.advance()
+	if not setForFrame then
 		bridgeButton("e")
-		-- print("e")
 	end
 end
 
-function input.setDebug(enabled)
+function Input.setDebug(enabled)
 	debug = enabled
 end
 
-function input.test(fn, completes)
-	while (true) do
-		if (not input.update()) then
-			if (fn() and completes) then
+function Input.test(fn, completes)
+	while true do
+		if not Input.update() then
+			if fn() and completes then
 				break
 			end
 		end
 		emu.frameadvance()
 	end
-	if (completes) then
+	if completes then
 		print(completes.." complete!")
 	end
 end
 
-return input
+return Input

@@ -1,0 +1,6 @@
+SystemID GB
+1A44	b	u	0	WRAM	Sec
+1A43	b	u	0	WRAM	Mins
+1A41	b	u	0	WRAM	Hour
+1A45	b	u	0	WRAM	Frames
+

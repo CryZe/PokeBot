@@ -1,4 +1,4 @@
-local movelist = {}
+local Movelist = {}
 -- http://bulbapedia.bulbagarden.net/wiki/List_of_moves#List_of_moves
 
 local moves = {
@@ -19,6 +19,7 @@ local moves = {
 		power = 50,
 		max_pp = 25,
 		accuracy = 100,
+		critical = true,
 	},
 	{
 		name = 'Double-Slap',
@@ -179,6 +180,7 @@ local moves = {
 		id = 20,
 		move_type = 'normal',
 		special = false,
+		outspeed = "turns",
 		power = 15,
 		max_pp = 20,
 		accuracy = 85,
@@ -218,6 +220,8 @@ local moves = {
 		power = 30,
 		max_pp = 30,
 		accuracy = 100,
+		multiple = 1.95,
+		fast = true,
 	},
 	{
 		name = 'Mega-Kick',
@@ -278,10 +282,11 @@ local moves = {
 		id = 31,
 		move_type = 'normal',
 		special = false,
-		outspeed = true,
+		outspeed = "turns",
 		power = 15,
 		max_pp = 20,
 		accuracy = 85,
+		multiple = 2,
 	},
 	{
 		name = 'Horn-Drill',
@@ -573,7 +578,7 @@ local moves = {
 		name = 'Hyper-Beam',
 		id = 63,
 		move_type = 'normal',
-		special = true,
+		special = false,
 		power = 150,
 		max_pp = 5,
 		accuracy = 90,
@@ -1492,6 +1497,7 @@ local moves = {
 		power = 70,
 		max_pp = 20,
 		accuracy = 100,
+		critical = true,
 	},
 	{
 		name = 'Substitute',
@@ -1513,8 +1519,8 @@ local moves = {
 	},
 }
 
-function movelist.get(id)
+function Movelist.get(id)
 	return moves[id]
 end
 
-return movelist
+return Movelist

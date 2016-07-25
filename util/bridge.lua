@@ -1,35 +1,36 @@
-local bridge = {}
+local Bridge = {}
 
-local utils = require("util.utils")
-local socket = require("socket")
+local Utils = require "util.utils"
+
+local json = require "external.json"
+
+local socket = require "socket"
 local memory = require "util.memory"
 
 local client = nil
-local timeStopped = false
-local lastSecs = 0
-local lastMins = 0
-local lastHours = 0
-local frames = 0
+local timeStopped = true
+local timeMin = 0
+local timeFrames = 0
 
 local function send(prefix, body)
-	if (client) then
+	if client then
 		local message = prefix
-		if (body) then
+		if body then
 			message = message.." "..body
 		end
-		client:send(message..'\n')
+		client:send(message.."\n")
 		return true
 	end
 end
 
 local function readln()
-	if (client) then
-		local s, status, partial = client:receive('*l')
+	if client then
+		local s, status, partial = client:receive("*l")
 		if status == "closed" then
 			client = nil
 			return nil
 		end
-		if s and s ~= '' then
+		if s and s ~= "" then
 			return s
 		end
 	end
@@ -37,137 +38,171 @@ end
 
 -- Wrapper functions
 
-function bridge.init()
-	-- print("Bridge initializing")
-	client = socket.connect("localhost", 16834)
-	-- print("Bridge initialized")
-end
-
-function bridge.tweet(message) -- Two of the same tweet in a row will only send one
-	print('tweet::'..message)
-	-- return send("tweet", message)
-	return true
-end
-
-function bridge.pollForName()
-	bridge.polling = true
-	-- send("poll_name")
-end
-
-function bridge.chat(message, extra)
-	-- print("Bridge Chat")
-	if (extra) then
-		print(message.." || "..extra)
-	else
-		print(message)
+function Bridge.init(gameName)
+	if socket then
+		-- io.popen("java -jar Main.jar")
+		client = socket.connect("localhost", 16834)
+		if client then
+			client:settimeout(0.005)
+			client:setoption("keepalive", true)
+			print("Connected to Java!");
+			send("init,"..gameName)
+			return true
+		else
+			print("Error connecting to Java!");
+		end
 	end
-	-- return send("msg", message)
+end
+
+function Bridge.tweet(message)
+	if STREAMING_MODE then
+		--print("tweet::"..message)
+		--send("tweet", message)
+		return true
+	end
+end
+
+function Bridge.pollForName()
+	Bridge.polling = true
+	--send("poll_name")
+end
+
+function Bridge.chatRandom(...)
+	return Bridge.chat(Utils.random(arg))
+end
+
+function Bridge.chat(message, suppressed, extra, newLine)
+	if not suppressed then
+		if extra then
+			p(message.." | "..extra, newLine)
+		else
+			p(message, newLine)
+		end
+	end
+	--return send("msg", message)
 	return true
 end
 
-function bridge.time()
+function Bridge.time()
 	if (not timeStopped) then
-		local seconds = memory.raw(0xDA44)
-		local minutes = memory.raw(0xDA43)
-		local hours = memory.raw(0xDA41)
+		local frames = memory.raw(0x1A45)
+		local seconds = memory.raw(0x1A44)
+		local minutes = memory.raw(0x1A43)
+		local hours = memory.raw(0x1A41)
 
-		if (hours ~= lastHours or minutes ~= lastMinutes or seconds ~= lastSeconds) then
-			frames = 0
-			lastSeconds = seconds
-			lastMinutes = minutes
-			lastHours = hours
+		if (frames == timeFrames) then
+			local seconds2 = seconds + (frames / 60)
+			local message = hours..":"..minutes..":"..seconds2
+			send("setgametime", message)
+			if timeFrames == 59 then
+				timeFrames = 0
+			else
+				timeFrames = (frames + 1)
+			end
 		end
-		seconds = seconds + frames / 60
 
-		if (seconds < 10) then
-			seconds = "0"..seconds
-		end
-		if (minutes < 10) then
-			minutes = "0"..minutes
-		end
-		local message = hours..":"..minutes..":"..seconds
-		send("setgametime", message)
-		frames = frames + 1
+		send("unpausegametime")
 	end
 end
 
-function bridge.stats(message)
-	-- print("Bridge Stats")
-	-- return send("stats", message)
+function Bridge.stats(message)
+	--return send("stats", message)
 	return true
 end
 
-function bridge.command(command)
-	-- print("Bridge Command")
+function Bridge.command(command)
+	print("Bridge Command")
 	return send(command)
 end
 
-function bridge.comparisonTime()
-	-- print("Bridge Comparison Time")
+function Bridge.comparisonTime()
+	print("Bridge Comparison Time")
 	return send("getcomparisonsplittime")
 end
 
-function bridge.process()
+function Bridge.process()
 	local response = readln()
-	if (response) then
-		-- print('>'..response)
-		if (response:find("name:")) then
+	if response then
+		-- print(">"..response)
+		if response:find("name:") then
 			return response:gsub("name:", "")
-		else
-
 		end
 	end
 end
 
-function bridge.input(key)
-	-- send("input", key)
+function Bridge.input(key)
+	--send("input", key)
 end
 
-function bridge.caught(name)
-	if (name) then
-		-- send("caught", name)
+function Bridge.caught(name)
+	if name then
+		--send("caught", name)
 	end
 end
 
-function bridge.hp(curr, max)
-	-- send("hp", curr..","..max)
+function Bridge.hp(curr_hp, max_hp, curr_xp, max_xp, level)
+	--send("hpxp", curr_hp..","..max_hp..","..curr_xp..","..max_xp..","..level)
 end
 
-function bridge.liveSplit()
+
+function Bridge.liveSplit()
 	-- print("Bridge Start Timer")
+	send("initgametime")
 	send("pausegametime")
 	send("starttimer")
 	timeStopped = false
 end
 
-function bridge.split(encounters, finished)
-	-- print("Bridge Split")
-	if (encounters) then
-		-- database.split(utils.igt(), encounters)
-	end
-	if (finished) then
+function Bridge.split(finished)
+	if finished then
 		timeStopped = true
 	end
 	send("split")
+	Utils.splitUpdate()
 end
 
-function bridge.encounter()
-	-- send("encounter")
+function Bridge.pausegametime()
+	send("pausegametime")
 end
 
-function bridge.reset()
-	-- print("Bridge Reset")
+function Bridge.encounter()
+	--send("encounter")
+end
+
+function Bridge.report(report)
+	if INTERNAL and not STREAMING_MODE then
+		print(json.encode(report))
+	end
+	send("report", json.encode(report))
+end
+
+-- GUESSING
+
+function Bridge.guessing(guess, enabled)
+	send(guess, tostring(enabled))
+end
+
+function Bridge.guessResults(guess, result)
+	send(guess.."results", result)
+end
+
+function Bridge.moonResults(encounters, cutter)
+	Bridge.guessResults("moon", encounters..","..(cutter and "cutter" or "none"))
+end
+
+-- RESET
+
+function Bridge.reset()
 	send("reset")
 	timeStopped = false
 end
 
-function bridge.close()
-	-- print("Bridge closing")
+function Bridge.close()
 	if client then
 		client:close()
 		client = nil
 	end
-	-- print("Bridge closed")
+	print("Bridge closed")
 end
 
-return bridge
+return Bridge

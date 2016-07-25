@@ -1,38 +1,45 @@
-local player = {}
+local Player = {}
 
-local textbox = require "action.textbox"
+local Textbox = require "action.textbox"
 
-local input = require "util.input"
-local memory = require "util.memory"
+local Input = require "util.input"
+local Memory = require "util.memory"
 
 local facingDirections = {Up=8, Right=1, Left=2, Down=4}
+local alternate = false
 
-function player.isFacing(direction)
-	return memory.value("player", "facing") == facingDirections[direction]
+function Player.isFacing(direction)
+	return Memory.value("player", "facing") == facingDirections[direction]
 end
 
-function player.face(direction)
-	if (player.isFacing(direction)) then
+function Player.face(direction)
+	if Player.isFacing(direction) then
 		return true
 	end
-	if (textbox.handle()) then
-		input.press(direction, 0)
+	if Textbox.handle() then
+		Input.press(direction, 0)
 	end
 end
 
-function player.interact(direction)
-	if (player.face(direction)) then
-		input.press("A", 2)
+function Player.interact(direction, extended)
+	if Player.face(direction) then
+		local speed = 2
+		if extended then
+			speed = alternate and 4 or 0
+			alternate = not alternate
+		end
+		Input.press("A", speed)
 		return true
 	end
+	alternate = false
 end
 
-function player.isMoving()
-	return memory.value("player", "moving") ~= 0
+function Player.isMoving()
+	return Memory.value("player", "moving") ~= 0
 end
 
-function player.position()
-	return memory.value("player", "x"), memory.value("player", "y")
+function Player.position()
+	return Memory.value("player", "x"), Memory.value("player", "y")
 end
 
-return player
+return Player
