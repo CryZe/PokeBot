@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Run version="1.6.0">
+  <GameIcon />
+  <GameName>Pokémon Red/Blue</GameName>
+  <CategoryName>Any% Glitchless Bot%</CategoryName>
+  <Metadata>
+    <Run id="" />
+    <Platform usesEmulator="False">
+    </Platform>
+    <Region>
+    </Region>
+    <Variables />
+  </Metadata>
+  <Offset>00:00:00</Offset>
+  <AttemptCount>1</AttemptCount>
+  <AttemptHistory>
+    <Attempt id="1" />
+    <Attempt id="2" />
+    <Attempt id="3" />
+    <Attempt id="4" />
+    <Attempt id="5" />
+    <Attempt id="6" />
+    <Attempt id="7" />
+    <Attempt id="8" />
+    <Attempt id="9" />
+    <Attempt id="10" />
+    <Attempt id="11" />
+    <Attempt id="12" />
+    <Attempt id="13" />
+    <Attempt id="14" />
+    <Attempt id="15" />
+    <Attempt id="16" />
+    <Attempt id="17" />
+    <Attempt id="18" />
+    <Attempt id="19" />
+    <Attempt id="20" />
+    <Attempt id="21" />
+    <Attempt id="22" />
+    <Attempt id="23" />
+    <Attempt id="24" />
+    <Attempt id="25" />
+    <Attempt id="26" />
+    <Attempt id="27" />
+    <Attempt id="28" />
+    <Attempt id="29" />
+    <Attempt id="30" />
+    <Attempt id="31" />
+    <Attempt id="32" />
+    <Attempt id="33" />
+    <Attempt id="34" />
+    <Attempt id="35" />
+    <Attempt id="36" />
+    <Attempt id="37" />
+    <Attempt id="38" />
+    <Attempt id="39" />
+    <Attempt id="40" />
+    <Attempt id="41" />
+    <Attempt id="42" />
+    <Attempt id="43" />
+    <Attempt id="44" />
+    <Attempt id="45" />
+    <Attempt id="46" />
+    <Attempt id="47" />
+    <Attempt id="48" />
+    <Attempt id="49" />
+    <Attempt id="50" />
+    <Attempt id="51" />
+    <Attempt id="52" />
+    <Attempt id="53" />
+    <Attempt id="54" />
+    <Attempt id="55" />
+    <Attempt id="56" />
+    <Attempt id="57" />
+    <Attempt id="58" />
+    <Attempt id="59" />
+    <Attempt id="60" />
+    <Attempt id="61" />
+    <Attempt id="62" />
+    <Attempt id="63" />
+    <Attempt id="64" />
+    <Attempt id="65" />
+    <Attempt id="66" />
+    <Attempt id="67" />
+    <Attempt id="68" />
+    <Attempt id="69" />
+    <Attempt id="70" />
+    <Attempt id="71" />
+    <Attempt id="72" />
+    <Attempt id="73" />
+    <Attempt id="74" />
+    <Attempt id="75" />
+    <Attempt id="76" />
+    <Attempt id="77" />
+    <Attempt id="78" />
+    <Attempt id="79" />
+    <Attempt id="80" />
+    <Attempt id="81" />
+    <Attempt id="82" />
+    <Attempt id="83" />
+    <Attempt id="84" />
+    <Attempt id="85" />
+    <Attempt id="86" />
+    <Attempt id="87" />
+    <Attempt id="88" />
+    <Attempt id="89" />
+    <Attempt id="90" />
+    <Attempt id="91" />
+    <Attempt id="92" />
+    <Attempt id="93" />
+    <Attempt id="94" />
+    <Attempt id="95" />
+    <Attempt id="96" />
+    <Attempt id="97" />
+    <Attempt id="98" />
+    <Attempt id="99" />
+    <Attempt id="100" />
+    <Attempt id="101" />
+    <Attempt id="102" />
+    <Attempt id="103" />
+    <Attempt id="104" />
+    <Attempt id="105" />
+    <Attempt id="106" />
+    <Attempt id="107" />
+    <Attempt id="108" />
+    <Attempt id="109" />
+    <Attempt id="110" />
+    <Attempt id="111" />
+    <Attempt id="112" />
+    <Attempt id="113" />
+    <Attempt id="114" />
+    <Attempt id="115" />
+    <Attempt id="116" />
+    <Attempt id="117" />
+    <Attempt id="118" />
+    <Attempt id="119" />
+    <Attempt id="120" />
+    <Attempt id="121" />
+    <Attempt id="122" />
+    <Attempt id="123" />
+    <Attempt id="124" />
+    <Attempt id="125" />
+    <Attempt id="126" />
+    <Attempt id="127" />
+    <Attempt id="128" />
+    <Attempt id="129" />
+    <Attempt id="130" />
+    <Attempt id="131" />
+    <Attempt id="132" />
+    <Attempt id="133" />
+    <Attempt id="134" />
+    <Attempt id="135" />
+    <Attempt id="136" />
+    <Attempt id="137" />
+    <Attempt id="138" />
+    <Attempt id="139" />
+    <Attempt id="140" />
+    <Attempt id="141" />
+    <Attempt id="142" />
+    <Attempt id="143" />
+    <Attempt id="144" />
+    <Attempt id="145" />
+    <Attempt id="146" />
+    <Attempt id="147" />
+    <Attempt id="148" />
+    <Attempt id="149" />
+    <Attempt id="150" />
+    <Attempt id="151" />
+    <Attempt id="152" />
+    <Attempt id="153" />
+    <Attempt id="154" />
+    <Attempt id="155" />
+    <Attempt id="156" />
+    <Attempt id="157" />
+    <Attempt id="158" />
+    <Attempt id="159" />
+    <Attempt id="160" />
+    <Attempt id="161" />
+    <Attempt id="162" />
+    <Attempt id="163" />
+    <Attempt id="164" />
+    <Attempt id="165" />
+    <Attempt id="166" />
+    <Attempt id="167" />
+    <Attempt id="168" />
+    <Attempt id="169" />
+    <Attempt id="170" />
+    <Attempt id="171" />
+    <Attempt id="172" />
+    <Attempt id="173" />
+    <Attempt id="174" />
+    <Attempt id="175" />
+    <Attempt id="176" />
+    <Attempt id="177" />
+    <Attempt id="178" />
+    <Attempt id="179" />
+    <Attempt id="180" />
+    <Attempt id="181" />
+    <Attempt id="182" />
+    <Attempt id="183" />
+    <Attempt id="184" />
+    <Attempt id="185" />
+    <Attempt id="186" />
+    <Attempt id="187" />
+    <Attempt id="188" />
+    <Attempt id="189" />
+    <Attempt id="190" />
+    <Attempt id="191" />
+    <Attempt id="192" />
+    <Attempt id="193" />
+    <Attempt id="194" />
+    <Attempt id="195" />
+    <Attempt id="196" />
+    <Attempt id="197" />
+    <Attempt id="198" />
+    <Attempt id="199" />
+    <Attempt id="200" />
+    <Attempt id="201" />
+    <Attempt id="202" />
+    <Attempt id="203" />
+    <Attempt id="204" />
+    <Attempt id="205" />
+    <Attempt id="206" />
+    <Attempt id="207" />
+    <Attempt id="208" />
+    <Attempt id="209" />
+    <Attempt id="210" />
+    <Attempt id="211" />
+    <Attempt id="212" />
+    <Attempt id="213" />
+    <Attempt id="214" />
+    <Attempt id="215" />
+    <Attempt id="216" />
+    <Attempt id="217" />
+    <Attempt id="218" />
+    <Attempt id="219" />
+    <Attempt id="220" />
+    <Attempt id="221" />
+    <Attempt id="222" />
+    <Attempt id="223" />
+    <Attempt id="224" />
+    <Attempt id="225" />
+    <Attempt id="226" />
+    <Attempt id="227" />
+    <Attempt id="228" />
+    <Attempt id="229" />
+    <Attempt id="230" />
+    <Attempt id="231" />
+    <Attempt id="232" />
+    <Attempt id="233" />
+    <Attempt id="234" />
+    <Attempt id="235" />
+    <Attempt id="236" />
+    <Attempt id="237" />
+    <Attempt id="238" />
+    <Attempt id="239" />
+    <Attempt id="240" />
+    <Attempt id="241" />
+    <Attempt id="242" />
+    <Attempt id="243" />
+    <Attempt id="244" />
+    <Attempt id="245" />
+    <Attempt id="246" />
+    <Attempt id="247" />
+    <Attempt id="248" />
+    <Attempt id="249" />
+    <Attempt id="250" />
+    <Attempt id="251" />
+    <Attempt id="252" />
+    <Attempt id="253" />
+    <Attempt id="254" />
+    <Attempt id="255" />
+    <Attempt id="256" />
+    <Attempt id="257" />
+    <Attempt id="258" />
+    <Attempt id="259" />
+    <Attempt id="260" />
+    <Attempt id="261" />
+    <Attempt id="262" />
+    <Attempt id="263" />
+    <Attempt id="264" />
+    <Attempt id="265" />
+    <Attempt id="266" />
+    <Attempt id="267" />
+    <Attempt id="268" />
+    <Attempt id="269" />
+    <Attempt id="270" />
+    <Attempt id="271" />
+    <Attempt id="272" />
+    <Attempt id="273" />
+    <Attempt id="274" />
+    <Attempt id="275" />
+    <Attempt id="276" />
+    <Attempt id="277" />
+    <Attempt id="278" />
+    <Attempt id="279" />
+    <Attempt id="280" />
+    <Attempt id="281" />
+    <Attempt id="282" />
+    <Attempt id="283" />
+    <Attempt id="284" />
+    <Attempt id="285" />
+    <Attempt id="286" />
+    <Attempt id="287" />
+    <Attempt id="288" />
+    <Attempt id="289" />
+    <Attempt id="290" />
+    <Attempt id="291" />
+    <Attempt id="292" />
+    <Attempt id="293" />
+    <Attempt id="294" />
+    <Attempt id="295" />
+    <Attempt id="296" />
+    <Attempt id="297" />
+    <Attempt id="298" />
+    <Attempt id="299" />
+    <Attempt id="300" />
+    <Attempt id="301" />
+    <Attempt id="302" />
+    <Attempt id="303" />
+    <Attempt id="304" />
+    <Attempt id="305" />
+    <Attempt id="306" />
+    <Attempt id="307" />
+    <Attempt id="308" />
+    <Attempt id="309" />
+    <Attempt id="310" />
+    <Attempt id="311" />
+    <Attempt id="312" />
+    <Attempt id="313" />
+    <Attempt id="314" />
+    <Attempt id="315" />
+    <Attempt id="316" />
+    <Attempt id="317" />
+    <Attempt id="318" />
+    <Attempt id="319" />
+    <Attempt id="320" />
+    <Attempt id="321" />
+    <Attempt id="322" />
+    <Attempt id="323" />
+    <Attempt id="324" />
+    <Attempt id="325" />
+    <Attempt id="326" />
+    <Attempt id="327" />
+    <Attempt id="328" />
+    <Attempt id="329" />
+    <Attempt id="330" />
+    <Attempt id="331" />
+    <Attempt id="332" />
+    <Attempt id="333" />
+    <Attempt id="334" />
+    <Attempt id="335" />
+    <Attempt id="336" />
+    <Attempt id="337" />
+    <Attempt id="338" />
+    <Attempt id="339" />
+    <Attempt id="340" />
+    <Attempt id="341" />
+    <Attempt id="342" />
+    <Attempt id="343" />
+    <Attempt id="344" />
+    <Attempt id="345" />
+    <Attempt id="346" />
+    <Attempt id="347" />
+    <Attempt id="348" />
+    <Attempt id="349" />
+    <Attempt id="350" />
+    <Attempt id="351" />
+    <Attempt id="352" />
+    <Attempt id="353" />
+    <Attempt id="354" />
+    <Attempt id="355" />
+    <Attempt id="356" />
+    <Attempt id="357" />
+    <Attempt id="358" />
+    <Attempt id="359" />
+    <Attempt id="360" />
+    <Attempt id="361" />
+    <Attempt id="362" />
+    <Attempt id="363" />
+    <Attempt id="364" />
+    <Attempt id="365" />
+    <Attempt id="366" />
+    <Attempt id="367" />
+    <Attempt id="368" />
+    <Attempt id="369" />
+    <Attempt id="370" />
+    <Attempt id="371" />
+    <Attempt id="372" />
+    <Attempt id="373" />
+    <Attempt id="374" />
+    <Attempt id="375" />
+    <Attempt id="376" />
+    <Attempt id="377" />
+    <Attempt id="378" />
+    <Attempt id="379" />
+    <Attempt id="380" />
+    <Attempt id="381" />
+    <Attempt id="382" />
+    <Attempt id="383" />
+    <Attempt id="384" />
+    <Attempt id="385" />
+    <Attempt id="386" />
+    <Attempt id="387" />
+    <Attempt id="388" />
+    <Attempt id="389" />
+    <Attempt id="390" />
+    <Attempt id="391" />
+    <Attempt id="392" />
+    <Attempt id="393" />
+    <Attempt id="394" />
+    <Attempt id="395" />
+    <Attempt id="396" />
+    <Attempt id="397" />
+    <Attempt id="398" />
+    <Attempt id="399" />
+    <Attempt id="400" />
+    <Attempt id="401" />
+    <Attempt id="402" />
+    <Attempt id="403" />
+    <Attempt id="404" />
+    <Attempt id="405" />
+    <Attempt id="406" />
+    <Attempt id="407" />
+    <Attempt id="408" />
+    <Attempt id="409" />
+    <Attempt id="410" />
+    <Attempt id="411" />
+    <Attempt id="412" />
+    <Attempt id="413" />
+    <Attempt id="414" />
+    <Attempt id="415" />
+    <Attempt id="416" />
+    <Attempt id="417" />
+    <Attempt id="418" />
+    <Attempt id="419" />
+    <Attempt id="420" />
+    <Attempt id="421" />
+    <Attempt id="422" />
+    <Attempt id="423" />
+    <Attempt id="424" />
+    <Attempt id="425" />
+    <Attempt id="426" />
+    <Attempt id="427" />
+    <Attempt id="428" />
+    <Attempt id="429" />
+    <Attempt id="430" />
+    <Attempt id="431" />
+    <Attempt id="432" />
+    <Attempt id="433" />
+    <Attempt id="434" />
+    <Attempt id="435" />
+    <Attempt id="436" />
+    <Attempt id="437" />
+    <Attempt id="438" />
+    <Attempt id="439" />
+    <Attempt id="440" />
+    <Attempt id="441" />
+    <Attempt id="442" />
+    <Attempt id="443" />
+    <Attempt id="444" />
+    <Attempt id="445" />
+    <Attempt id="446" />
+    <Attempt id="447" />
+    <Attempt id="448" />
+    <Attempt id="449" />
+    <Attempt id="450" />
+    <Attempt id="451" />
+    <Attempt id="452" />
+    <Attempt id="453" />
+    <Attempt id="454" />
+    <Attempt id="455" />
+    <Attempt id="456" />
+    <Attempt id="457" />
+    <Attempt id="458" />
+    <Attempt id="459" />
+    <Attempt id="460" />
+    <Attempt id="461" />
+    <Attempt id="462" />
+    <Attempt id="463" />
+    <Attempt id="464" />
+    <Attempt id="465" />
+    <Attempt id="466" />
+    <Attempt id="467" />
+    <Attempt id="468" />
+    <Attempt id="469" />
+    <Attempt id="470" />
+    <Attempt id="471" />
+    <Attempt id="472" />
+    <Attempt id="473" />
+    <Attempt id="474" />
+    <Attempt id="475" />
+    <Attempt id="476" />
+    <Attempt id="477" />
+    <Attempt id="478" />
+    <Attempt id="479" />
+    <Attempt id="480" />
+    <Attempt id="481" />
+    <Attempt id="482" />
+    <Attempt id="483" />
+    <Attempt id="484" />
+    <Attempt id="485" />
+    <Attempt id="486" />
+    <Attempt id="487" />
+    <Attempt id="488" />
+    <Attempt id="489" />
+    <Attempt id="490" />
+    <Attempt id="491" />
+    <Attempt id="492" />
+    <Attempt id="493" />
+    <Attempt id="494" />
+    <Attempt id="495" />
+    <Attempt id="496" />
+    <Attempt id="497" />
+    <Attempt id="498" />
+    <Attempt id="499" />
+    <Attempt id="500" />
+    <Attempt id="501" />
+    <Attempt id="502" />
+    <Attempt id="503" />
+    <Attempt id="504" />
+    <Attempt id="505" />
+    <Attempt id="506" />
+    <Attempt id="507" />
+    <Attempt id="508" />
+    <Attempt id="509" />
+    <Attempt id="510" />
+    <Attempt id="511" />
+    <Attempt id="512" />
+    <Attempt id="513" />
+    <Attempt id="514" />
+    <Attempt id="515" />
+    <Attempt id="516" />
+    <Attempt id="517" />
+    <Attempt id="518" />
+    <Attempt id="519" />
+    <Attempt id="520" />
+    <Attempt id="521" />
+    <Attempt id="522" />
+    <Attempt id="523" />
+    <Attempt id="524" />
+    <Attempt id="525" />
+    <Attempt id="526" />
+    <Attempt id="527" />
+    <Attempt id="528" />
+    <Attempt id="529" />
+    <Attempt id="530" />
+    <Attempt id="531" />
+    <Attempt id="532" />
+    <Attempt id="533" />
+    <Attempt id="534" />
+    <Attempt id="535" />
+    <Attempt id="536" />
+    <Attempt id="537" />
+    <Attempt id="538" />
+    <Attempt id="539" />
+    <Attempt id="540" />
+    <Attempt id="541" />
+    <Attempt id="542" />
+    <Attempt id="543" />
+    <Attempt id="544" />
+    <Attempt id="545" />
+    <Attempt id="546" />
+    <Attempt id="547" />
+    <Attempt id="548" />
+    <Attempt id="549" />
+    <Attempt id="550" />
+    <Attempt id="551" />
+    <Attempt id="552" />
+    <Attempt id="553" />
+    <Attempt id="554" />
+    <Attempt id="555" />
+    <Attempt id="556" />
+    <Attempt id="557" />
+    <Attempt id="558" />
+    <Attempt id="559" />
+    <Attempt id="560" />
+    <Attempt id="561" />
+    <Attempt id="562" />
+    <Attempt id="563" />
+    <Attempt id="564" />
+    <Attempt id="565" />
+    <Attempt id="566" />
+    <Attempt id="567" />
+    <Attempt id="568" />
+    <Attempt id="569" />
+    <Attempt id="570" />
+    <Attempt id="571" />
+    <Attempt id="572" />
+    <Attempt id="573" />
+    <Attempt id="574" />
+    <Attempt id="575" />
+    <Attempt id="576" />
+    <Attempt id="577" />
+    <Attempt id="578" />
+    <Attempt id="579" />
+    <Attempt id="580" />
+    <Attempt id="581" />
+    <Attempt id="582" />
+    <Attempt id="583" />
+    <Attempt id="584" />
+    <Attempt id="585" />
+    <Attempt id="586" />
+    <Attempt id="587" />
+    <Attempt id="588" />
+    <Attempt id="589" />
+    <Attempt id="590" />
+    <Attempt id="591" />
+    <Attempt id="592" />
+    <Attempt id="593" />
+    <Attempt id="594" />
+    <Attempt id="595" />
+    <Attempt id="596" />
+    <Attempt id="597" />
+    <Attempt id="598" />
+    <Attempt id="599" />
+    <Attempt id="600" />
+    <Attempt id="601" />
+    <Attempt id="602" />
+    <Attempt id="603" />
+    <Attempt id="604" />
+    <Attempt id="605" />
+    <Attempt id="606" />
+    <Attempt id="607" />
+    <Attempt id="608" />
+    <Attempt id="609" />
+    <Attempt id="610" />
+    <Attempt id="611" />
+    <Attempt id="612" />
+    <Attempt id="613" />
+    <Attempt id="614" />
+    <Attempt id="615" />
+    <Attempt id="616" />
+    <Attempt id="617" />
+    <Attempt id="618" />
+    <Attempt id="619" />
+    <Attempt id="620" />
+    <Attempt id="621" />
+    <Attempt id="622" />
+    <Attempt id="623" />
+    <Attempt id="624" />
+    <Attempt id="625" />
+    <Attempt id="626" />
+    <Attempt id="627" />
+    <Attempt id="628" />
+    <Attempt id="629" />
+    <Attempt id="630" />
+    <Attempt id="631" />
+    <Attempt id="632" />
+    <Attempt id="633" />
+    <Attempt id="634" />
+    <Attempt id="635" />
+    <Attempt id="636" />
+    <Attempt id="637" />
+    <Attempt id="638" />
+    <Attempt id="639" />
+    <Attempt id="640" />
+    <Attempt id="641" />
+    <Attempt id="642" started="07/17/2016 11:59:28" isStartedSynced="True" ended="07/17/2016 12:17:18" isEndedSynced="True" />
+    <Attempt id="643" started="07/17/2016 12:17:20" isStartedSynced="True" ended="07/17/2016 12:34:22" isEndedSynced="True" />
+    <Attempt id="644" started="07/17/2016 12:34:24" isStartedSynced="True" ended="07/17/2016 12:38:10" isEndedSynced="True" />
+    <Attempt id="645" started="07/17/2016 12:39:49" isStartedSynced="True" ended="07/17/2016 12:41:26" isEndedSynced="True" />
+    <Attempt id="646" started="07/17/2016 12:41:29" isStartedSynced="True" ended="07/17/2016 13:11:44" isEndedSynced="True">
+      <RealTime>00:30:15.5960000</RealTime>
+      <GameTime>01:49:32.8330000</GameTime>
+    </Attempt>
+    <Attempt id="647" started="07/17/2016 13:11:55" isStartedSynced="True" ended="07/17/2016 13:12:22" isEndedSynced="True" />
+    <Attempt id="648" started="07/26/2016 09:45:40" isStartedSynced="True" ended="07/26/2016 09:45:43" isEndedSynced="True" />
+  </AttemptHistory>
+  <Segments>
+    <Segment>
+      <Name>Rival</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Nidoran</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Brock</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Route 3</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Mt. Moon</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Nugget Bridge</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Misty</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Surge</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Fly</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Poke Flute</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Silph Co.</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Koga</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Erika</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Blaine</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Sabrina</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Giovanni</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Lorelei</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Bruno</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Agatha</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Lance</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>Champion</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+  </Segments>
+  <AutoSplitterSettings />
+</Run>
